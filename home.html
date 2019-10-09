@@ -1,3 +1,31 @@
-<h1> Hello </h1>
+<!doctype html>
 
-<h2> this is a heading 2 </h2>
+<html lang="en">
+	<head>
+	<title>Page Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+</head>
+
+<body>
+	<h1>Arrays and Array indices</h1>
+	<script>
+		var num = window.prompt("Please Enter A Number between 0 and 4 inclusive", "");
+		if (isNaN(parseFloat(num))) {
+			// isNaN(x) is TRUE if x isn't a number
+			// and FALSE if x is a number
+			document.write("<h2>" + num + " is NOT a number</h2>");
+		} else {
+			if (num >= 01 && num <= 4) {
+				//					   create the array
+				german = ["null", "eins", "zwei", "drei", "vier"];
+        		document.writeln(german[num]);
+					}
+            
+			}
+			//				  document.write("<h2>" + num + " is a number</h2>");
+
+	</script>
+
+</body>
+</html>
